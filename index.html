@@ -33,8 +33,8 @@
             font-weight: bold;
             position: absolute;
             white-space: nowrap;
-            animation: scroll 10s linear infinite; /* Scroll speed adjusted */
             opacity: 0; /* Hide the text initially */
+            animation: scroll 8s linear infinite; /* Increased scroll speed */
         }
 
         .scrolling-text {
@@ -78,6 +78,7 @@
 "BevarsLanja Kojavada NiKuthaniKojaVaduDenga KukaSula PichiLanja PirikiLanja", "AthuluKudaSarigaMolavaniKoja GadhidhaNinuDenga DuradaPukuLanja MadaUpenaAipoinaKoja", "WifiLagaDengichukunaMunda VichakayaluTisiAmukune-Dourbhaguda Madachodh PillaBacha LanjaMunda", "PandhiMadaGudiseKuka Bastard Scoundrel Son of a bitch",
 "MotherFucker Asshole Whore NuvuPuttiBhumiKiBokaRa GaysNiPelliChesukune-BogamMunda",
 "39 Sarlu Kotukoni 40 Sari Sachina Kuka"
+
         ];
 
         const container = document.getElementById("scrollContainer");
@@ -107,7 +108,7 @@
         let delay = 0;
         lines.forEach((text, index) => {
             createLine(text, delay);
-            delay += 10000; // 10 seconds for each line before the next starts
+            delay += 8000; // 8 seconds for each line before the next starts
         });
 
         // This will restart the loop once all lines have appeared and scrolled
@@ -115,7 +116,7 @@
             delay = 0;
             lines.forEach((text, index) => {
                 createLine(text, delay);
-                delay += 10000;
+                delay += 8000;
             });
         }, delay);
     </script>
