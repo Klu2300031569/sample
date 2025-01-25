@@ -9,28 +9,37 @@
             font-family: Arial, sans-serif;
             background-color: #222;
             color: #fff;
-            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
         }
 
         .scroll-container {
             width: 100%;
+            height: 100%;
             overflow: hidden;
-            padding: 20px 0;
-            background-color: #333;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .line {
             display: inline-block;
             margin-bottom: 10px;
             white-space: nowrap;
-            animation: scroll 15s linear infinite;
+            animation: scroll 30s linear infinite; /* Slower scroll speed */
+            font-size: 36px; /* Adjusted font size for readability */
         }
 
         .scrolling-text {
-            font-size: 24px;
             font-weight: bold;
             display: inline-block;
-            animation: disco 1.5s alternate infinite;
+            animation: disco 2s alternate infinite; /* Slower disco effect */
         }
 
         @keyframes scroll {
@@ -55,10 +64,17 @@
 <body>
 
     <div class="scroll-container">
-        <div class="line"><span class="scrolling-text">Welcome to my stylish scrolling text page!</span></div>
-        <div class="line"><span class="scrolling-text">This is line 2, scrolling smoothly.</span></div>
-        <div class="line"><span class="scrolling-text">The text moves from right to left.</span></div>
-      
+        <div class="line"><span class="scrolling-text">kangara?  Anthe le ra adhe kangaru tho mana dbms project chesa 
+Nuvu nijam ga aa mata ante nuvu oka pedha lafoot
+vi</span></div>
+        <div class="line"><span class="scrolling-text">Rasina vadu REvanth or anyone else matram:</span></div>
+        <div class="line"><span class="scrolling-text">Edhava sanasi Gadhidha Pandhi Lanja Koja PirikinaPukuGadu MadaLegavaniVadu KojaLanja BaszzarLanja PUKUNaKoduku LANJALARani Erripoku NaMadaNotloPetukovadaniki Kuda Paniki Radu</span></div>
+        <div class="line"><span class="scrolling-text">BevarsLanja Kojavada NiKuthaniKojaVaduDenga KukaSula PichiLanja PirikiLanja AthuluKudaSarigaMolavaniKoja GadhidhaNinuDenga</span></div>
+        <div class="line"><span class="scrolling-text">DuradaPukuLanja MadaUpenaAipoinaKoja WifiLagaDengichukunaMunda VichakayaluTisiAmukune-Dourbhaguda Madachodh PillaBacha LanjaMunda PandhiMadaGudiseKuka</span></div>
+        <div class="line"><span class="scrolling-text">Bastard Scoundrel Son of a bitch 
+MotherFucker Asshole Whore NuvuPuttiBhumiKiBokaRa GaysNiPelliChesukune-BogamMunda </span></div>
+        <div class="line"><span class="scrolling-text">39 Sarlu Kotukoni 40 Sari Sachina Kuka !</span></div>
+    </div>
 
 </body>
 </html>
